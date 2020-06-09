@@ -1,5 +1,35 @@
 # Udacity Blockchain Capstone
 
+# how to test contracts locally
+
+- clone the repo or unzip it to a folder
+
+- open terminal at this folder
+
+- install dependencies
+
+```bash
+> npm install
+```
+
+- compile contracts
+
+```bash
+> truffle compile
+```
+
+- start ganache-cli in new terminal
+
+```bash
+`> ganache-cli -l 9999999
+```
+
+- run tests
+
+```bash
+> truffle test
+```
+
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product.
 ## SolnSquareVerifier contract address at rinkeby
 0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7
@@ -16,6 +46,15 @@ The capstone will build upon the knowledge you have gained in the course in orde
 ## properties sold
 
 [https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/6](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/6)
+
+[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/7](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/7)
+
+[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/8](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/8)
+
+[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/6](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/9)
+
+[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/17](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/17)
+
 ## properties remaining
 
 
@@ -31,13 +70,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 
 [https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/5](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/5)
 
-[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/6](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/6)
 
-[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/7](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/7)
-
-[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/8](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/8)
-
-[https://https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/17](https://rinkeby.opensea.io/assets/0xe61845008b656E0dB02bCb653cF7A1DF3C7075F7/17)
 ## contract ABI
 
 
@@ -56,4 +89,4 @@ The capstone will build upon the knowledge you have gained in the course in orde
 * [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
 * [Docker](https://docs.docker.com/install/)
 * [ZoKrates](https://github.com/Zokrates/ZoKrates)
-"# capstone" 
+"# capstone"
