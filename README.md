@@ -2,11 +2,10 @@
 
 # how to test contracts locally
 
-- clone the repo or unzip it to a folder
+- clone the repositary 
 
-- open terminal at this folder
-
-- install dependencies
+- install dependencies required (npm install)
+-It downloads all the required node modules
 
 ```bash
 > npm install
@@ -19,10 +18,6 @@
 ```
 
 - start ganache-cli in new terminal
-
-```bash
-`> ganache-cli -l 9999999
-```
 
 - run tests
 
