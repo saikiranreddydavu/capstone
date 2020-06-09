@@ -22,7 +22,7 @@ contract('TestSquareVerifier', accounts => {
 
         // Test verification with correct proof
         // - use the contents from proof.json generated from zokrates steps
-        it('with correct proof', async function () {
+        it('working with correct proof', async function () {
 
             let result = await this.contract.verifyTx.call(proof.a, proof.b, proof.c, proof.input)
 
@@ -30,7 +30,7 @@ contract('TestSquareVerifier', accounts => {
         })
 
         // Test verification with incorrect proof
-        it('with incorrect proof', async function () {
+        it('working with incorrect proof', async function () {
 
             let result = await this.contract.verifyTx.call(proof.a, proof.b, proof.c, [9,0])
 

@@ -17,7 +17,7 @@ contract('TestSolnSquareVerifier', accounts => {
         })
 
         // Test if a new solution can be added for contract - SolnSquareVerifier
-        it('new solution can be added to contract', async function() {
+        it('if a new solution can be added to contract', async function() {
 
             let proof = {
               a: ["0x1ba0df5159c4c75da8a30d34e28b0a2242b9634aed77c9b41b979e6081ed5033", "0x04a81e18c8c57362b000213bce6d533055ba4f830dc76abf9c5bf37907ffbdd0"],
@@ -37,7 +37,7 @@ contract('TestSolnSquareVerifier', accounts => {
         })
 
         // Test if an ERC721 token can be minted for contract - SolnSquareVerifier
-        it('a token can be minted', async function() {
+        it('Now a token can be minted', async function() {
 
             let mint = await this.contract.mint.call(account_two, 3, "Duplex")
 

@@ -4,32 +4,36 @@ contract('TestERC721Mintable', accounts => {
 
     const account_one = accounts[0];
     const account_two = accounts[1];
+    const account_three = accounts[2];
+    const account_four = accounts[4];
+    const account_five = accounts[5]
 
     describe('match erc721 spec', function () {
         beforeEach(async function () {
             this.contract = await ERC721MintableComplete.new({from: account_one});
 
             // TODO: mint multiple tokens
-            for(let i = 2; i < 10; i++)
-            {
-                await this.contract.mint(accounts[i], i, "Glice");  // address, index, URI
-            }
+            await this.contract.mint(account_two,1,"kiran");
+            await this.contract.mint(account_three,2,"sai");
+            await this.contract.mint(account_four,3,"sai");
+            await this.contract.mint(account_five,4,"sai");
+
         })
 
-        it('should return total supply', async function () {
+        it('It should return total supply', async function () {
             let totalSupply = await this.contract.totalSupply()
-            assert.equal(totalSupply, 8, "incorrect supply value returned")
+            assert.equal(totalSupply, 4, "incorrect supply value returned")
         })
 
-        it('should get token balance', async function () {
+        it('get token balance', async function () {
             let tokenBalance = await this.contract.balanceOf(accounts[2])
             assert.equal(tokenBalance, 1, "Token balance should equal 1");
         })
 
         // token uri should be complete i.e: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/1
-        it('should return token uri', async function () {
-            let tokenURI = await this.contract.tokenURI(2);
-            assert.equal(tokenURI, "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/2", "URI is not correct")
+        it('It should return token uri', async function () {
+            let tokenURI = await this.contract.tokenURI(4);
+            assert.equal(tokenURI, "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/4", "URI is not correct")
         })
 
         it('should transfer token from one owner to another', async function () {
